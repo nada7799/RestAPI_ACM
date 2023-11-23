@@ -16,7 +16,7 @@ function getAllCurrentUsers() {
             else {
                 throw new Error("user list is empty");
             }
-        }, 0);
+        }, 1000);
     });
 }
 

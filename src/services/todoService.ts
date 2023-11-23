@@ -48,9 +48,9 @@ function getAllTodos() {
                 resolve(todos);
             }
             else {
-                console.log("todo is empty");
+                throw new Error("todo is empty");
             }
-        }, 0);
+        }, 1000);
     })
 }
 async function getAllTodosAsync() {

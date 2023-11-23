@@ -5,6 +5,7 @@ import { tasktype } from "../types/taskType";
 const getAllTodosController = async (req: Request, res: Response) => {
     try {
         let alltodosreturned = await getAllTodosAsync();
+        console.log(alltodosreturned)
         res.status(200).json({ Message: "Success todos", Data: alltodosreturned });
     }
     catch (error) {
